@@ -30,6 +30,12 @@ create or replace package body "PIPELINE" as
 
     return;
 
+exception
+ WHEN OTHERS THEN
+    --decide how to handle errors, maybe a inserting into an error table
+    dbms_output.put_line('Error in package PIPELINE -> SQLCODE=' || SQLCODE || '  SQLERRM=' || SQLERRM);
+    return;
+
  end get_locs;       
 
 end "PIPELINE";

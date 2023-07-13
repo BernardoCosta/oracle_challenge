@@ -196,7 +196,4 @@ select * from item_loc_soh where loc = 119 and dept = 97;
 -- For my dataset, 100.000 records, the insert operation is taking on average 0.4 seconds, and the merge operation averaging 0.65 seconds.
 
 11)
--- I haven't been exposed to this type of analysis before and would need more time to both learn how it works and then analyze the problem and suggest a solution.
-
-12)
--- Not able to attempt this challenge due to running out of time.
+-- Seems that there's an execution that ran 28 times and took an average of 6,082.08 seconds per execution
